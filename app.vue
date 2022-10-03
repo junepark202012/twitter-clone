@@ -1,13 +1,18 @@
 <script setup lang="ts">
 const { x, y } = useMouse()
+const isDark = useDark()
+
+watch(isDark, () => {
+  console.log(isDark.value)
+})
 </script>
 
 <template>
-  <div class="dark">
-    <h1 class="text-dim-500">
+  <div class="">
+    <h1 class="text-3xl text-primary">
       Tiwtter Clone
     </h1>
-    <div class="">
+    <div class="text-secondary">
       pos: {{ x }} {{ y }}
     </div>
   </div>

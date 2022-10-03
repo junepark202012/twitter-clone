@@ -1,3 +1,15 @@
-:root {
-  font-family: "Inter", "Noto Sans KR", Courier, monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: "Inter", "Noto Sans KR", Courier, monospace;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    @apply text-red-500 dark:text-blue-500
+  }
 }

@@ -17,7 +17,7 @@ const { increment } = counterStore
 
 <template>
   <div class="">
-    <h1 class="text-3xl">
+    <h1 class="text-3xl text-primary">
       Greetings
     </h1>
     <p class="text-3xl">
