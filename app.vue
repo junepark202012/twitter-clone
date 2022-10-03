@@ -2,8 +2,7 @@
 
 <template>
   <NuxtLayout>
-    <TestDropdown class="ml-12" />
-    <TestHeroIcon class="ml-12" />
+    Hello World
   </NuxtLayout>
 </template>
 
