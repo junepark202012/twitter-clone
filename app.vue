@@ -1,21 +1,9 @@
-<script setup lang="ts">
-const { x, y } = useMouse()
-const isDark = useDark()
-
-watch(isDark, () => {
-  console.log(isDark.value)
-})
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="">
-    <h1 class="text-3xl text-primary">
-      Tiwtter Clone
-    </h1>
-    <div class="text-secondary">
-      pos: {{ x }} {{ y }}
-    </div>
-  </div>
+  <NuxtLayout>
+    some page content
+  </NuxtLayout>
 </template>
 
 <style scoped>
