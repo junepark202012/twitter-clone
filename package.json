@@ -13,6 +13,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
+    "@headlessui/vue": "^1.7.3",
+    "@heroicons/vue": "^2.0.11",
     "@nuxtjs/google-fonts": "3.0.0-0",
     "@nuxtjs/tailwindcss": "^5.3.3",
     "@pinia/nuxt": "^0.4.2",

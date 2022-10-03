@@ -2,7 +2,8 @@
 
 <template>
   <NuxtLayout>
-    some page content
+    <TestDropdown class="ml-12" />
+    <TestHeroIcon class="ml-12" />
   </NuxtLayout>
 </template>
 
