@@ -2,7 +2,7 @@
 
 <template>
   <NuxtLayout>
-    Hello World
+    <TuiSidebar />
   </NuxtLayout>
 </template>
 
