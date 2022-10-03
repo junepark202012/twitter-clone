@@ -8,6 +8,7 @@ const nuxtConfig: NuxtConfig = {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
+    '@vueuse/nuxt',
   ],
   typescript: {
     shim: false,
