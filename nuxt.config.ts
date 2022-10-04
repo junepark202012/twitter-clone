@@ -9,6 +9,7 @@ const nuxtConfig: NuxtConfig = {
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
+    'nuxt-icon',
   ],
   typescript: {
     shim: false,

@@ -16,6 +16,7 @@ const navigation = [
     <div class="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
       <div class="flex flex-shrink-0 items-center px-4">
         <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
+        <Icon name="logos:twitter" />
       </div>
       <nav class="mt-5 flex-1 space-y-1 bg-white px-2" aria-label="Sidebar">
         <a v-for="item in navigation" :key="item.name" :href="item.href" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md" :class="[item.current ? 'bg-gray-100 text-gray-900 hover:text-gray-900 hover:bg-gray-100' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50']">

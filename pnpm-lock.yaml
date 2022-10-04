@@ -4,6 +4,7 @@ specifiers:
   '@antfu/eslint-config': ^0.27.0
   '@headlessui/vue': ^1.7.3
   '@heroicons/vue': ^2.0.11
+  '@iconify/vue': ^4.0.0
   '@nuxtjs/google-fonts': 3.0.0-0
   '@nuxtjs/tailwindcss': ^5.3.3
   '@pinia/nuxt': ^0.4.2
@@ -11,6 +12,7 @@ specifiers:
   '@vueuse/nuxt': ^9.3.0
   eslint: ^8.24.0
   nuxt: 3.0.0-rc.11
+  nuxt-icon: ^0.1.6
   typescript: ^4.8.4
   vue-tsc: ^0.40.13
   webpack: ^5.74.0
@@ -19,6 +21,7 @@ devDependencies:
   '@antfu/eslint-config': 0.27.0_ypn2ylkkyfa5i233caldtndbqa
   '@headlessui/vue': 1.7.3
   '@heroicons/vue': 2.0.11
+  '@iconify/vue': 4.0.0
   '@nuxtjs/google-fonts': 3.0.0-0
   '@nuxtjs/tailwindcss': 5.3.3_webpack@5.74.0
   '@pinia/nuxt': 0.4.2_typescript@4.8.4
@@ -26,6 +29,7 @@ devDependencies:
   '@vueuse/nuxt': 9.3.0_nuxt@3.0.0-rc.11
   eslint: 8.24.0
   nuxt: 3.0.0-rc.11_ypn2ylkkyfa5i233caldtndbqa
+  nuxt-icon: 0.1.6
   typescript: 4.8.4
   vue-tsc: 0.40.13_typescript@4.8.4
   webpack: 5.74.0
@@ -510,6 +514,24 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify/types/2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+    dev: true
+
+  /@iconify/vue/3.2.1:
+    resolution: {integrity: sha512-c4R6ZgFo1JrJ8aPMMgOPgfU7lBswihMGR+yWe/P4ZukC3kTkeT4+lkt9Pc/itVFMkwva/S/7u9YofmYv57fnNQ==}
+    peerDependencies:
+      vue: 3.x
+    dev: true
+
+  /@iconify/vue/4.0.0:
+    resolution: {integrity: sha512-73z81Yf2HISfehu3qvN9GqL1OnUO7wEMKkiFwVGJ2pqAdGCR8FrVylhRhka+6U+gFLlng0ynnT20svk3jJYwow==}
+    peerDependencies:
+      vue: '>=3'
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@ioredis/commands/1.2.0:
@@ -4901,6 +4923,16 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-icon/0.1.6:
+    resolution: {integrity: sha512-kxw2a1VcLpqzFp0q84AhRykXOnVO5p8dEIPF0GWbFiAOK0pn1acCbTVRbgKm4sD3H+g1v3Gm8OYvl71TCDDkqg==}
+    dependencies:
+      '@iconify/vue': 3.2.1
+      '@nuxt/kit': 3.0.0-rc.11
+    transitivePeerDependencies:
+      - supports-color
+      - vue
     dev: true
 
   /nuxt/3.0.0-rc.11_ypn2ylkkyfa5i233caldtndbqa:
