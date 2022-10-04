@@ -25,11 +25,10 @@ module.exports = {
       ...defaultTheme.colors,
     },
     screens: {
-      xs: '614px',
-      sm: '1002px',
-      md: '1022px',
-      lg: '1092px',
-      xl: '1280px',
+      xs: '31.25rem',
+      sm: '37.5rem',
+      md: '62.875rem',
+      lg: '79rem',
     },
     extend: {
       colors: {
