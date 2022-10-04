@@ -33,8 +33,8 @@ module.exports = {
     extend: {
       colors: {
         ...myColors,
-        lightLogo: myColors.primary['100'],
-        darkLogo: myColors.primary['400'],
+        lightLogo: myColors.primary['400'],
+        lightLogoBg: myColors.primary['100'],
       },
     },
   },

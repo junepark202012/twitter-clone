@@ -5,6 +5,7 @@
 @layer base {
   :root {
     font-family: "Inter", "Noto Sans KR", Courier, monospace;
+    font-weight: 400;
   }
 }
 
