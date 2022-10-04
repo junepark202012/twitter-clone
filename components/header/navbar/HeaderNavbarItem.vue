@@ -30,8 +30,5 @@ defineProps<{
 </template>
 
 <style scoped>
-/* noinspection */
-.router-link-active svg {
-  @apply fill-typo-primary-light dark:fill-typo-primary-dark
-}
+
 </style>
