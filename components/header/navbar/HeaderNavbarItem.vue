@@ -1,15 +1,18 @@
 <script lang="ts" setup>
 defineProps<{
   routerLink: string
-
+  name: string
 }>()
 </script>
 
 <template>
   <div>
-    <HeaderIcon router-link="/" class="hover:bg-logoBgLight dark:hover:bg-logoBgDark">
+    <HeaderButton :router-link="routerLink" class="hover:bg-logoBgLight dark:hover:bg-logoBgDark">
       <Icon name="bi:twitter" class="text-logoLight dark:text-logoDark dark:hover:bg-logoBgDark" />
-    </HeaderIcon>
+      <div v-if="name" class="mr-4 ml-4">
+        {{ name }}
+      </div>
+    </HeaderButton>
   </div>
 </template>
 
