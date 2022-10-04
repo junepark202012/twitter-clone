@@ -5,7 +5,17 @@ defineProps<{
 </script>
 
 <template>
-  <NuxtLink :to="routerLink" class="w-12 h-12 rounded-full flex justify-center items-center cursor-pointer lg:w-auto lg:max-w-min p-3 text-xl">
+  <NuxtLink
+    :to="routerLink"
+    class="
+     w-max rounded-full
+     flex items-center
+     cursor-pointer
+     p-3
+     text-xl
+     transition-colors
+    "
+  >
     <slot />
   </NuxtLink>
 </template>

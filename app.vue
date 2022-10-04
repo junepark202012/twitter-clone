@@ -4,9 +4,6 @@ useDark()
 
 <template>
   <div>
-    <div class="bg-logo-hover-dark">
-      Hi
-    </div>
     <TheHead />
     <NuxtLayout>
       <NuxtPage />

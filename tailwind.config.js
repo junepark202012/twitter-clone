@@ -14,17 +14,15 @@ module.exports = {
     extend: {
       colors: {
         ...myColors,
-        logoLight: '#1d9bf0',
-        logoDark: '#eff3f4',
-        logoBgLight: '#e7e9ea',
-        logoBgDark: '#181818',
-        textLight: {
-          primary: '#0f1419',
-          secondary: '#536471',
+        logo: {
+          light: '#1d9bf0',
+          dark: '#eff3f4',
+          hover: { light: '#e8f5fe', dark: '#181818' },
+          // #e7e9ea
         },
-        textDark: {
-          primary: '#71767b',
-          secondary: '#e7e9ea',
+        typo: {
+          primary: { light: '#0f1419', dark: '#e7e9ea' },
+          secondary: { light: '#536471', dark: '#71767b' },
         },
       },
     },

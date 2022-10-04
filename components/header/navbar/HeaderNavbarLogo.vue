@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <HeaderButton router-link="/" class="hover:bg-logoBgLight dark:hover:bg-logoBgDark">
-    <Icon name="bi:twitter" class="text-logoLight dark:text-logoDark" />
+  <HeaderButton router-link="/" class="hover:bg-logo-hover-light dark:hover:bg-logo-hover-dark">
+    <Icon name="bi:twitter" class="text-logo-light dark:text-logo-dark" width="24px" />
   </HeaderButton>
 </template>
 
