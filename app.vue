@@ -1,11 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <NuxtLayout>
-    <TuiSidebar />
-  </NuxtLayout>
+  <div>
+    <TheHead />
+    <NuxtPage />
+  </div>
 </template>
 
-<style scoped>
-
-</style>
