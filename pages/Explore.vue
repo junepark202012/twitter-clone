@@ -2,7 +2,9 @@
 </script>
 
 <template>
-  <div>AboutView</div>
+  <div>
+    ExploreView
+  </div>
 </template>
 
 <style scoped>

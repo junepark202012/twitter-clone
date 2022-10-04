@@ -5,7 +5,12 @@ useDark()
 <template>
   <div>
     <TheHead />
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
+
+<style scoped>
+</style>
 

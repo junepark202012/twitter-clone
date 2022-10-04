@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <div class="">
-    Home
+  <div>
+    Bookmarks
   </div>
 </template>
 

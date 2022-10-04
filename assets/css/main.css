@@ -4,8 +4,12 @@
 
 @layer base {
   :root {
-    font-family: "Inter", "Noto Sans KR", Courier, monospace;
+    font-family: "Inter", "Noto Sans KR", sans-serif;
     font-weight: 400;
+  }
+
+  body {
+    @apply text-lightFont dark:text-darkFont bg-white dark:bg-black
   }
 }
 

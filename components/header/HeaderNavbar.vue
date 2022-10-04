@@ -1,35 +1,37 @@
 <script lang="ts" setup>
-import { CalendarIcon, ChartBarIcon, FolderIcon, HomeIcon, InboxIcon, UsersIcon } from '@heroicons/vue/24/outline'
 import { Icon } from '#components'
-
-const tuiNavigation = [
-  { name: 'Dashboard', icon: HomeIcon, href: '#', current: true },
-  { name: 'Team', icon: UsersIcon, href: '#', count: 3, current: false },
-  { name: 'Projects', icon: FolderIcon, href: '#', count: 4, current: false },
-  { name: 'Calendar', icon: CalendarIcon, href: '#', current: false },
-  { name: 'Documents', icon: InboxIcon, href: '#', count: 12, current: false },
-  { name: 'Reports', icon: ChartBarIcon, href: '#', current: false },
-]
 </script>
 
 <template>
-  <div>
-    <div class="flex flex-1 flex-col overflow-y-auto w-36">
-      <IconButton router-link="/" class="hover:bg-lightLogoBg">
-        <Icon name="bi:twitter" class="text-lightLogo dark:text-darkLogo" />
-      </IconButton>
-      <IconButton router-link="/" class="hover:bg-lightLogoBg" text="Home">
-        <Icon name="bi:twitter" class="text-lightLogo dark:text-darkLogo" />
-      </IconButton>
-      <nav class="mt-5 flex-1 space-y-1 bg-white px-2" aria-label="Sidebar">
-        <a v-for="item in tuiNavigation" :key="item.name" :href="item.href" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md" :class="[item.current ? 'bg-gray-100 text-gray-900 hover:text-gray-900 hover:bg-gray-100' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50']">
-          <component :is="item.icon" class="mr-3 flex-shrink-0 h-6 w-6" :class="[item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500']" aria-hidden="true" />
-          <span class="flex-1">{{ item.name }}</span>
-          <span v-if="item.count" class="ml-3 inline-block py-0.5 px-3 text-xs font-medium rounded-full" :class="[item.current ? 'bg-white' : 'bg-gray-100 group-hover:bg-gray-200']">{{ item.count }}</span>
-        </a>
-      </nav>
-    </div>
-  </div>
+  <nav id="header-navbar" class="flex flex-1 flex-col overflow-y-auto w-64 mx-3">
+    <IconButton router-link="/" class="hover:bg-lightLogoBg dark:hover:bg-darkLogoBg">
+      <Icon name="bi:twitter" class="text-lightLogo dark:text-darkLogo dark:hover:bg-darkLogoBg" />
+    </IconButton>
+    <IconButton text="Home" router-link="/" class="hover:bg-darkLogoBg">
+      <Icon name="bi:house" class="text-lightLogo dark:text-darkLogo" />
+    </IconButton>
+    <IconButton text="Explore" router-link="/explore" class="hover:bg-darkLogoBg">
+      <Icon name="bi:hash" class="text-lightLogo dark:text-darkLogo" />
+    </IconButton>
+    <IconButton text="Notifications" router-link="/notifications" class="hover:bg-darkLogoBg">
+      <Icon name="bi:hash" class="text-lightLogo dark:text-darkLogo" />
+    </IconButton>
+    <IconButton text="Messages" router-link="/messages" class="hover:bg-darkLogoBg">
+      <Icon name="bi:twitter" class="text-lightLogo dark:text-darkLogo" />
+    </IconButton>
+    <IconButton text="Bookmarks" router-link="/bookmarks" class="hover:bg-darkLogoBg">
+      <Icon name="bi:twitter" class="text-lightLogo dark:text-darkLogo" />
+    </IconButton>
+    <IconButton text="Lists" router-link="/lists" class="hover:bg-darkLogoBg">
+      <Icon name="bi:twitter" class="text-lightLogo dark:text-darkLogo" />
+    </IconButton>
+    <IconButton text="Profile" router-link="/profile" class="hover:bg-darkLogoBg">
+      <Icon name="bi:twitter" class="text-lightLogo dark:text-darkLogo" />
+    </IconButton>
+    <IconButton text="More" router-link="/more" class="hover:bg-darkLogoBg">
+      <Icon name="bi:twitter" class="text-lightLogo dark:text-darkLogo" />
+    </IconButton>
+  </nav>
 </template>
 
 <style scoped>

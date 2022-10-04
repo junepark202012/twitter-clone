@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <div class="">
-    Home
+  <div>
+    NotificationsView
   </div>
 </template>
 
