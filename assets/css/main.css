@@ -9,7 +9,7 @@
   }
 
   body {
-    @apply text-lightFont dark:text-darkFont bg-white dark:bg-black
+    @apply text-textLight-primary dark:text-textDark-primary bg-white dark:bg-black
   }
 }
 

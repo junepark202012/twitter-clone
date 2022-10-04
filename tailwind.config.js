@@ -1,18 +1,4 @@
-const myColors = {
-  mono: {
-    100: '#e7e9ea',
-    200: '#eff3f4',
-    400: '#e6e7e7',
-    600: '#536471',
-    700: '#1e2328',
-    800: '#0f1419',
-    900: '#181818',
-  },
-  primary: {
-    100: '#e8f5fe',
-    400: '#1d9bf0',
-  },
-}
+const myColors = {}
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -28,12 +14,18 @@ module.exports = {
     extend: {
       colors: {
         ...myColors,
-        lightLogo: myColors.primary['400'],
-        lightLogoBg: myColors.mono['100'],
-        darkLogo: myColors.mono['200'],
-        darkLogoBg: myColors.mono['900'],
-        lightFont: myColors.mono['800'],
-        darkFont: myColors.mono['100'],
+        logoLight: '#1d9bf0',
+        logoDark: '#eff3f4',
+        logoBgLight: '#e7e9ea',
+        logoBgDark: '#181818',
+        textLight: {
+          primary: '#0f1419',
+          secondary: '#536471',
+        },
+        textDark: {
+          primary: '#71767b',
+          secondary: '#e7e9ea',
+        },
       },
     },
   },
