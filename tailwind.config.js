@@ -1,3 +1,5 @@
+const defaultColors = require('tailwindcss/colors')
+
 const myColors = {
   primary: '#1d9bf0',
 }
@@ -15,6 +17,7 @@ module.exports = {
     },
     extend: {
       colors: {
+
         ...myColors,
         logo: {
           light: myColors.primary,
@@ -25,6 +28,9 @@ module.exports = {
         typo: {
           primary: { light: '#0f1419', dark: '#e7e9ea' },
           secondary: { light: '#536471', dark: '#71767b' },
+        },
+        hover: {
+          light: defaultColors.gray[100],
         },
       },
       transitionProperty: {

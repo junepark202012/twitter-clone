@@ -3,8 +3,7 @@
 
 <template>
   <div>
-    <MainHeader title="Home" />
-    <BlockPost />
+    <slot />
   </div>
 </template>
 
