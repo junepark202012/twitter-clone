@@ -9,7 +9,7 @@
     rounded-full
     flex items-center justify-center
     cursor-pointer
-    w-14 h-14 p-3
+    w-14 h-14
     text-xl
     hover:bg-logo-hover-light dark:hover:bg-logo-hover-dark transition-colors
     "

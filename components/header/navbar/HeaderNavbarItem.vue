@@ -22,7 +22,7 @@ defineProps<{
       "
     >
       <Component :is="icon" class="w-7 h-7 fill-typo-primary-light dark:fill-typo-primary-dark" />
-      <div class="mr-4 ml-4">
+      <div class="mr-4 ml-4 hidden lg:block">
         {{ name }}
       </div>
     </NuxtLink>
