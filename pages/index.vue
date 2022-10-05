@@ -4,7 +4,11 @@
 <template>
   <div>
     <MainHeader title="Home" />
-    <BlockPost />
+    <div class="flex flex-col max-w-[37.5rem]">
+      <BlockPost />
+      <BlockPost />
+      <BlockPost />
+    </div>
   </div>
 </template>
 

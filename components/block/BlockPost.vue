@@ -7,7 +7,9 @@
     grid grid-cols-[auto_1fr] grid-rows-[repeat(2, auto)]
     cursor-pointer
     hover:bg-hover-light
-    px-4
+    dark:hover:bg-transparent
+    px-4 py-3
+    bor
     "
   >
     <div class="mr-3 flex-shrink-0 min-w-max row-span-2">
