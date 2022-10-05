@@ -1,21 +1,10 @@
 <script lang="ts" setup>
-
 </script>
 
 <template>
-  <NuxtLink
-    to="/"
-    class="
-    rounded-full
-    flex items-center justify-center
-    cursor-pointer
-    w-14 h-14
-    text-xl
-    hover:bg-logo-hover-light dark:hover:bg-logo-hover-dark transition-colors
-    "
-  >
+  <IconRound class="hover:bg-logo-hover-light dark:hover:bg-logo-hover-dark">
     <Icon name="bi:twitter" class="text-logo-light dark:text-logo-dark w-7 h-7" />
-  </NuxtLink>
+  </IconRound>
 </template>
 
 <style scoped>
