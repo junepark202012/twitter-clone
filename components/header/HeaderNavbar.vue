@@ -19,7 +19,7 @@ const headerNavbarItems: headerNavbarItem[] = [
 </script>
 
 <template>
-  <nav id="header-navbar" class="flex flex-col w-64 mx-3 px-3">
+  <nav id="header-navbar" class="flex flex-col w-auto lg:w-64 p-1 xs:px-3 transition-spacing">
     <HeaderNavbarLogo />
     <HeaderNavbarItem
       v-for="item in headerNavbarItems" :key="item.name"

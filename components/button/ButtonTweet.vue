@@ -5,11 +5,16 @@
   <div
     class="
     flex justify-center items-center
-    rounded-full py-3.5 mt-2
+    rounded-full py-3.5
     text-white bg-primary
-    font-bold"
+    font-bold
+    mt-2
+    w-14 h-14
+    lg:w-auto
+    "
   >
-    Tweet
+    <IconTweet class="lg:hidden w-7 h-7 fill-white" />
+    <span class="hidden lg:block">Tweet</span>
   </div>
 </template>
 

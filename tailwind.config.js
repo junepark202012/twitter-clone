@@ -27,6 +27,10 @@ module.exports = {
           secondary: { light: '#536471', dark: '#71767b' },
         },
       },
+      transitionProperty: {
+        display: 'display,',
+        spacing: 'margin, padding',
+      },
     },
   },
   plugins: [],
