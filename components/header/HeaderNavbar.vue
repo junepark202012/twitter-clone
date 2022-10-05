@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Component } from '@nuxt/schema'
+import type { Component } from '@vue/runtime-core'
 import { IconExplore, IconHome, IconMessages, IconMore, IconNotification, IconProfile } from '#components'
 
 interface headerNavbarItem {

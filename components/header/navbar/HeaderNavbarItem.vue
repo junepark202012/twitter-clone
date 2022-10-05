@@ -30,5 +30,7 @@ defineProps<{
 </template>
 
 <style scoped>
-
+.router-link-active {
+  @apply font-bold
+}
 </style>
