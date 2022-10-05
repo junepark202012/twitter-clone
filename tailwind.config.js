@@ -1,4 +1,6 @@
-const myColors = {}
+const myColors = {
+  primary: '#1d9bf0',
+}
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -15,7 +17,7 @@ module.exports = {
       colors: {
         ...myColors,
         logo: {
-          light: '#1d9bf0',
+          light: myColors.primary,
           dark: '#eff3f4',
           hover: { light: '#e8f5fe', dark: '#181818' },
           // #e7e9ea
